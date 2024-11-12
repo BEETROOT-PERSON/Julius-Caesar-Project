@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" href = "websiteContent/romanSymbol.png">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Julius Ceaser Project</title>
+    </head>
+    <body id = "body">
+        <header class="header">
+            <div class = "titleControls">
+                <img id="img1" src="websiteContent/romanSymbol.png" alt="Roman symbol">
+                <h1 class="titles">Julius Ceaser - Independent Reading Project</h1>
+                <!-- Hamburger Menu Icon for Mobile -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbarControls">
+                <nav class="navbar">
+                    <ul class="navbarElements">
+                        <li class="element"><a href="index.html">Home</a></li>
+                        <li class="element"><a href="event.html">Current World Events</a></li>
+                        <li class="element"><a href="relevance.html">Relevance Of Julius Ceaser</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class = "mainpage">
+            <section class = "mainSection">
+                <img class = "img2" src = "websiteContent/JuliusCeaser1.webp">
+                <div class = "textControls">
+                    <h1 class = "typedTitles" style = "font-size: 30px;">Theme - Power & Ambition</h1>
+                    <h1 class = "typedTitles" style = "font-size: 30px;">Thematic Statement - "Ambition, when left alone with fear of the unknown, can cause people to do desperate, ofttimes foolish things"</h1>
+                    <br>
+                    <p class = "typedContent" style = "font-size: 20px;">Evidence - “Why, man, he doth bestride the narrow world. Like a Colossus, and we petty men. Walk under his huge legs, and peep about. To find ourselves dishonorable graves.” (Act 1, Scene 2, Pg 7)</p>
+                    <p class = "typedContent"  id = "evidence2" style = "font-size: 20px;">Evidence -  “It must be by his death: and for my part, I know no personal cause to spurn at him, But for the general. He would be crowned: How that might change his nature, there’s the question.” (Act 2, Scene 1, Pg 18)</p>
+                </div>
+            </section>
+        </main>
+        <div>
+            <footer class = "footer" style = "color: #c38d19; text-align: center; background-color: #7e2b34;">
+                <p style = "padding: 10px; padding-top: 15px; margin: 0px;">Luca Critac - English Honors 10<br> 11/9/24 • Official Website<br></p>
+            </footer>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navbarElements = document.querySelector('.navbarElements');
+
+            hamburger.addEventListener('click', () => {
+                navbarElements.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
