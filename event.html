@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" href = "romanSymbol.png">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Julius Ceaser Project</title>
+    </head>
+    <body id = "body">
+        <header class="header">
+            <div class = "titleControls">
+                <img id="img1" src="romanSymbol.png" alt="Roman symbol">
+                <h1 class="titles">Julius Ceaser - Independent Reading Project</h1>
+                <!-- Hamburger Menu Icon for Mobile -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbarControls">
+                <nav class="navbar">
+                    <ul class="navbarElements">
+                        <li class="element"><a href="index.html">Home</a></li>
+                        <li class="element"><a href="event.html">Current World Events</a></li>
+                        <li class="element"><a href="relevance.html">Relevance Of Julius Ceaser</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class = "mainpage">
+            <section class = "mainSection">
+                <div class = "textControls">
+                    <h1 class = "typedTitles" style = "font-size: 30px;">The Modern Political Landscape</h1>
+                    <p class = "typedTitles" style = "font-size: 19px;">In modern day America, most find that this election was critical in American history, and now that we have the results that Donald Trump is now the president elect, the nation does not seem to be resting so easy. Many from both sides are concerned with the future of this nation, and many have voiced concerns over their rights potentially being taken away. The nation, now more divided than ever, seems to be at a high point in tensions, and now more than ever it is crucial that we as a nation come together and heed the warnings of the past before our own great republic follows a simmilar fate.</p>
+                    <br>
+                    <p class = "typedTitles"  id = "evidence2" style = "font-size: 18px;">The election results are in and Donald Trump has been declared the president elect of America. Bringing many mixed feelings to the American people as he has a reputation for being an egotistical, narsacistic and overconfident individual. Which could pose some issues, according to the Guardian "Trump appears incapable of separating his fragile ego from trying to get attention and get even rather than get elected president. He’s attacking everyone and everything. After the New York Times ran a piece a few days ago about the “the worst three weeks” of his campaign, Trump exploded at what he called 'the Failing New York Times, which is a crooked newspaper run by a Radical Left group of Lunatics, is losing readers at a record level.'” With all these more personal issues getting in the way of official matters (his campaign) it may be safe to say that more personal issues could get in the way of him doing his job as president. His ambition and ego getting in the way could lead to many issues down the road, especially if left unchecked and exposed to speculation and fear among the people.</p>
+                    <p class = "typedTitles" style = "font-size: 18px;">The greater issue at hand is among the American people, and how politics has a significant impact on how people behave. According to the American Psychological Association "Politics is a stressor that’s complicated and multifaceted, Ford said, partly because it can trigger such a wide variety of emotions, ranging from worry, sadness, and despair to outrage, disgust, anger, frustration, and more. Political events can have both short- and long-term repercussions, and they often involve conflict between groups, which can have real-life social ramifications." This could lead to people taking drastic actions in situations they believe to be desperate for the greater good.</p>
+                    <p class = "typedTitles">Sources: <a href = "https://www.theguardian.com/commentisfree/article/2024/aug/12/donald-trumps-ego-cannot-handle-being-trounced-by-kamala-harris">https://www.theguardian.com/commentisfree/article/2024/aug/12/donald-trumps-ego-cannot-handle-being-trounced-by-kamala-harris</a>
+                        <a href = "https://www.apa.org/monitor/2024/10/managing-political-stress">https://www.apa.org/monitor/2024/10/managing-political-stress</a>
+                    </p>
+            </section>
+        </main>
+        <div>
+            <footer class = "footer" style = "color: #c38d19; text-align: center; background-color: #7e2b34;">
+                <p style = "padding: 10px; padding-top: 15px; margin: 0px;">Luca Critac - English Honors 10<br> 11/9/24 • Official Website<br></p>
+            </footer>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navbarElements = document.querySelector('.navbarElements');
+
+            hamburger.addEventListener('click', () => {
+                navbarElements.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
