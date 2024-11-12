@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "icon" href = "websiteContent/romanSymbol.png">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title>Julius Ceaser Project</title>
+    </head>
+    <body id = "body">
+        <header class="header">
+            <div class = "titleControls">
+                <img id="img1" src="websiteContent/romanSymbol.png" alt="Roman symbol">
+                <h1 class="titles">Julius Ceaser - Independent Reading Project</h1>
+                <!-- Hamburger Menu Icon for Mobile -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbarControls">
+                <nav class="navbar">
+                    <ul class="navbarElements">
+                        <li class="element"><a href="index.html">Home</a></li>
+                        <li class="element"><a href="event.html">Current World Events</a></li>
+                        <li class="element"><a href="relevance.html">Relevance Of Julius Ceaser</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class = "mainpage">
+            <section class = "mainSection">
+                <div class = "textControls">
+                    <h1 class = "typedTitles" style = "font-size: 30px;">Why Julius Ceaser is still relevant to contemporary audiences</h1>
+                    <p class = "typedTitles" style = "font-size: 20px;">Now more than ever do we have such an opportunity to look at such an ancient historical event, and apply it to our own lives. People have less trust in government than ever before and it seems that government gets more and more hungry for power as time goes on. Both politicians and citizens have something to learn from this, and something to apply</p>
+                    <p class = "typedTitles"  id = "evidence2" style = "font-size: 18px;">Amidst all the chaos of recent history, it is imporntant that our politicans do not let their ego's or ambition get the best of them. As public servants they have a duty to serve the interests of the people and not themselves, so when the people speak, the politicians should listen and address the issues. Otherwise, if they do, they could end up making foolish descisions frowned upon by others. Which cvould lead to conflicts as others could conspire against them, ultimately leading to a lot of unnessecary chaos and destruction. The fear such actions can cause can and will drive people to do drastic things, the French, English, Russian and American revolutions, and of course, the assisination of Julius Ceaser are all cases where this was true, and as the saying goes: "History repeats itself"</p>
+                    <p class = "typedTitles" style = "font-size: 18px;">However, it is not only the politicians that should take note of this. As the same way fear led Cassius to conspire against Ceaser is the way fear is making the people of America react in unhealthy ways to the news that Donald Trump will become the 47th president of America, and regardless of your political views, there should be no need to add so much stress to your life to the point where it is hurts you and we have not seen how exactly he will take the country in his second term yet. It was under a similar fear that the conspirators acted the way they did as a result of Ceasers rising power, resulting in their untimely demise and ultimately, the descision they took ended up being a poor desicion. People make poor descisions under strong emotions, and it is crucial that people maintain level heads before making descisions that they may ultimately regret in the future.</p>
+                    <p></p>
+                </div>
+            </section>
+        </main>
+        <div>
+            <footer class = "footer" style = "color: #c38d19; text-align: center; background-color: #7e2b34;">
+                <p style = "padding: 10px; padding-top: 15px; margin: 0px;">Luca Critac - English Honors 10<br> 11/9/24 • Official Website<br></p>
+            </footer>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navbarElements = document.querySelector('.navbarElements');
+
+            hamburger.addEventListener('click', () => {
+                navbarElements.classList.toggle('active');
+            });
+        </script>
+    </body>
+</html>
