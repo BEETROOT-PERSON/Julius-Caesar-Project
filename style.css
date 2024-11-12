@@ -1,0 +1,223 @@
+/*
+Color Pallete - Text color: #011627
+Background color: #F0F0F0
+Header/footer/sectioned background colors: #7e2b34
+Highlights color: #c38d19
+*/
+
+*{
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+#body{
+    margin: 0;
+    background-color: #F0F0F0;
+}
+.header {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #7e2b34;
+    padding-bottom: 10px;
+}
+.body{
+    text-align: center;
+    margin: 0;
+}
+.mainpage{
+    margin: 20px;
+    min-height: 100vh;
+}
+.dropdownMenu{
+    display: inline-block
+}
+.dropdownMenu button{
+    background-color: #c38d19;
+    color: #242331;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+.dropdownMenu a{
+    display: block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.dropdownMenu .dropdownMenuContent{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #c38d19;
+}
+.dropdownMenu:hover .dropdownMenuContent{
+    display: block;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.navbarElements {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbarElements ul{
+    overflow: hidden;
+}
+.navbarElements li {
+    margin-right: 30px;
+    float: left;
+}
+
+.navbarElements a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    color: #c38d19;
+    font-size: 20px;
+}
+.navbarElements a:hover{
+    text-decoration: underline;
+}
+.titles{
+    float: left;
+    font-size: 30px;
+    margin-top: 40px;
+    color: #c38d19;
+}
+#img1{
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+    margin: 20px;
+}
+.img2{
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px; 
+}
+@media screen and (max-width: 1410px) {
+    header {
+        flex-direction: column; /* Stack everything vertically on smaller screens */
+        align-items: center;
+    }
+    .navbar {
+        flex-direction: row; /* Keeps the navbar horizontal */
+        order: 2; /* Ensures it appears below the logo-title */
+        width: 100%; /* Makes the navbar span the full width */
+        justify-content: center; /* Center the navbar items */
+        overflow: hidden;
+    }
+    #img1 {
+        margin-top: 15px;
+    }
+}
+
+/* Mobile Menu Toggle Button (Hamburger) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #c38d19;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 810px) { /* This needs to be at 480px*/
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbarControls {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .navbarElements {
+        display: none; /* Hide navbar links by default */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .navbarElements.active {
+        display: flex; /* Show dropdown menu when active */
+    }
+
+    .navbarElements li {
+        width: 100%; /* Full width for each menu item */
+        text-align: center;
+    }
+
+    .navbarElements a {
+        color: #c38d19;
+        background-color: #7e2b34;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 13px;
+        padding-top: 35px;
+        position: absolute;
+        right: 0;
+        margin-left: 10px;
+    }
+
+    .navbarElements a:hover{
+        background-color: #6c262e;
+    }
+}
+.smallTitle{
+    text-align: center;
+}
+section{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-height: 100vh;
+    color: #011627;
+    float: left;
+    /*background-color: #c38d19;*/
+}
+.typedTitles{
+    text-align: center;
+    margin-top: 30px;
+}
+.typedContent{
+    text-align: left;
+}
+#evidence2{
+    margin: 10px;
+}
+.textControls{
+    margin: 20px;
+}
